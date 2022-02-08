@@ -2,7 +2,7 @@ package circle;
 
 public class Circle extends Object implements ICircle {
 
-	private static double DEFAULT_RADIUS = 10.0;
+	private static final double DEFAULT_RADIUS = 10.0;
 	
 	public static int count;
 	
