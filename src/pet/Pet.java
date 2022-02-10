@@ -30,9 +30,12 @@ public class Pet {
 
 	@Override
 	public boolean equals(Object obj) {
-		
-		// TODO Auto-generated method stub
-		return super.equals(obj);
+		if (!(obj instanceof Pet))
+			return false;
+		Pet other = (Pet) obj;
+		if (!getId().equals(other.getId()))
+			return false;
+		return true;
 	}
 	
 	

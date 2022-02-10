@@ -1,5 +1,7 @@
 package circle;
 
+import misc.Dog;
+
 public class Circle extends Object implements ICircle {
 
 	private static final double DEFAULT_RADIUS = 10.0;
@@ -44,9 +46,22 @@ public class Circle extends Object implements ICircle {
 
 	@Override
 	public boolean equals(Object object) {
+		if (!(object instanceof Circle))
+			return false;
+			
 		ICircle other = (ICircle) object;
 		
 		return other.getRadius() == getRadius();
 	}
 
+	public static void main(String[] args) {
+		Circle c1 = new Circle(10.0);
+		String s1 = new String("Hello World");
+		
+		if (c1.equals(s1))
+			System.out.println("True");
+		else
+			System.out.println("False");
+			
+	}
 }
