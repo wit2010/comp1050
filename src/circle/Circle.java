@@ -1,11 +1,7 @@
 package circle;
 
-import misc.Dog;
+public class Circle implements ICircle {
 
-public class Circle extends Object implements ICircle {
-
-	private static final double DEFAULT_RADIUS = 10.0;
-	
 	public static int count;
 	
 	// Properties
@@ -54,6 +50,7 @@ public class Circle extends Object implements ICircle {
 		return other.getRadius() == getRadius();
 	}
 
+
 	public static void main(String[] args) {
 		Circle c1 = new Circle(10.0);
 		String s1 = new String("Hello World");
@@ -64,4 +61,5 @@ public class Circle extends Object implements ICircle {
 			System.out.println("False");
 			
 	}
+
 }

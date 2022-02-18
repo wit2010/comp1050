@@ -2,10 +2,12 @@ package circle;
 
 public interface ICircle {
 
-	public double getRadius();
+	final double DEFAULT_RADIUS = 10.0;
+	
+	double getRadius();
 
-	public void setRadius(double radius);
+	void setRadius(double radius);
 
-	public double computeArea();
+	double computeArea();
 
 }

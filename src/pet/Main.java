@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
+		
 		Dog d1 = new Dog("Spot", "1234");
 		Dog d2 = new Dog("Rover", "6789");
 		

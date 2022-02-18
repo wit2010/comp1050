@@ -1,6 +1,6 @@
 package pet;
 
-public class Pet {
+abstract public class Pet {
 
 	private String name;
 	private String id;
@@ -24,9 +24,7 @@ public class Pet {
 		return String.format("%s (%s)", getName(), getId());
 	}		
 
-	public String says() {
-		return null;
-	}
+	abstract public String says();
 
 	@Override
 	public boolean equals(Object obj) {
@@ -38,6 +36,4 @@ public class Pet {
 		return true;
 	}
 	
-	
-
 }
