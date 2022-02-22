@@ -52,14 +52,6 @@ public class Circle implements ICircle {
 
 
 	public static void main(String[] args) {
-		Circle c1 = new Circle(10.0);
-		String s1 = new String("Hello World");
-		
-		if (c1.equals(s1))
-			System.out.println("True");
-		else
-			System.out.println("False");
-			
 	}
 
 }
