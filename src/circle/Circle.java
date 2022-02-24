@@ -50,7 +50,9 @@ public class Circle implements ICircle {
 		return other.getRadius() == getRadius();
 	}
 
-
+	public void foo() {
+		
+	}
 	public static void main(String[] args) {
 	}
 
