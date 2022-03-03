@@ -1,6 +1,6 @@
-package circle;
+package generics;
 
-public class Circle implements ICircle {
+public class Circle implements ICircle, Comparable<Circle> {
 
 	public static int count;
 	
@@ -50,7 +50,17 @@ public class Circle implements ICircle {
 		return other.getRadius() == getRadius();
 	}
 
+	@Override
+	public int compareTo(Circle circle) {
+		return this.getRadius() > circle.getRadius()? 1:
+			(this.getRadius() < circle.getRadius()? -1: 0);
+	}
+
 	public static void main(String[] args) {
+		Circle c1 = new Circle(10);
+		Circle c2 = new Circle(20);
+		
+		System.out.println(c1.compareTo(c2));
 	}
 
 }
