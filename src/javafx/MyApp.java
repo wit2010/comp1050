@@ -13,10 +13,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class App extends Application {
+public class MyApp extends Application {
 
 	// http://tutorials.jenkov.com/javafx/index.html
-		
+	// https://www.youtube.com/watch?v=FLkOX4Eez6o&list=PL6gx4Cwl9DGBzfXLWLSYVy8EbTdpGbUIG&index=1
+
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -28,10 +29,10 @@ public class App extends Application {
 		button.setText("Click me");
 		
 		Label label = new Label();
-		label.setText("Hello World");
+		label.setText("My Label");
 	
 		TextField textField = new TextField();
-		textField.setPromptText("Enter your last name");
+		textField.setPromptText("Last name");
 		textField.setMaxWidth(200);
 		
 		CheckBox checkBox = new CheckBox();
