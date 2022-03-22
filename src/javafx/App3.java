@@ -9,7 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 
 
-public class App3 extends Application implements EventHandler<ActionEvent>{
+public class App3 extends Application implements EventHandler<ActionEvent> {
 
 	private static final String TITLE = "App-3";
 
