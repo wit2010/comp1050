@@ -11,16 +11,16 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class Calculator extends Application  implements EventHandler<ActionEvent> {
-
-	private TextField textFieldNumber1;
-	private TextField textFieldNumber2;
+public class Calculator extends Application implements EventHandler<ActionEvent> {
 
 	private Button buttonDivide;
 	private Button buttonMultiply;
 	private Button buttonAddition;
 	private Button buttonSubtraction;
 	
+	private TextField textFieldNumber1;
+	private TextField textFieldNumber2;
+
 	private Label labelAnswer;
 
 	private Button buttonClear;
@@ -40,10 +40,10 @@ public class Calculator extends Application  implements EventHandler<ActionEvent
 		buttonAddition = new Button("+");
 		buttonSubtraction = new Button("-");
 		
-		labelAnswer = new Label("?");
+		labelAnswer = new Label();
 
 		buttonClear = new Button("Clear");
-
+		
 		labelAnswer.setAlignment(Pos.CENTER);
 		labelAnswer.setStyle("-fx-border-color: #000; -fx-padding: 5px;");
 
